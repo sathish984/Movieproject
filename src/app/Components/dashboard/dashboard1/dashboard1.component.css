@@ -1,0 +1,152 @@
+body
+{
+    background-color: black;
+}
+.image
+{
+    height: 30%;
+}
+img
+{
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-expand-lg
+{
+    background-color: black;
+}
+.container-fluid .navbar-brand
+{
+    color: red;
+}
+.navbar-nav .nav-item .nav-link
+{
+   font-weight: bold;
+   color: red;
+}
+.carousel-caption
+{
+    color:whitesmoke;
+}
+.line
+{
+    border: 1px solid whitesmoke;
+}
+.h4
+{
+    color:rgb(240, 81, 81);
+    font-size: 100px;
+}
+#image
+{
+    height: 150px;
+    width: 150px;
+}
+.figure
+{
+    display: inline-block;
+    width: 180px;
+    height: 230px;
+    border:1px solid grey;
+}
+.title
+{
+    color: whitesmoke;
+    font-size: medium;
+}
+.center
+{
+    text-align: center;
+}
+.nav-item .nav-link:hover
+{
+   background-color: rgba(255, 0, 0, 0.671);
+   transition: 2s;
+}
+b:hover
+{
+    color: white;
+    transition: 1.5s;
+}
+.figure:hover
+{
+    background-color: rgba(128, 128, 128, 0.555);
+    transition: 2s;
+}
+img:hover
+{
+    background-image: url("https://www.freeiconspng.com/thumbs/video-play-icon/video-play-icon-11.png");
+    
+}
+select
+{
+    background-color: black;
+    color: red;
+    border-radius: 10%;
+    border-color: black;
+    font-size: larger;
+    cursor: pointer;
+}
+select:hover
+{
+    color:red;
+   transition: 2s;
+}
+
+
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;  
+}
+  
+  /* Style the dropdown button */
+  .dropbtn {
+    background-color: black;
+    color: red;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.377);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown-content a {
+    color:red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: larger;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #dddddd23;
+    color:rgba(255, 0, 0, 0.699);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  
+  /* Show the dropdown content when the button is hovered over */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.figure1
+{
+    margin-left: 1.5%;
+}

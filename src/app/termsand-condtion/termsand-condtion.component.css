@@ -1,0 +1,27 @@
+body
+{
+   /*background-color: black;*/
+   /*background: rgb(218,251,63);
+background: radial-gradient(circle, rgba(218,251,63,1) 46%, rgba(70,159,252,1) 84%);*/
+background-image: url("https://d10lpgp6xz60nq.cloudfront.net/engagement_framework/5EF641EB-3545-EAD3-2F24-32AC07402186.webp");
+   height:700px;
+   background-repeat: no-repeat;
+   background-size: cover;
+}  
+.container
+{
+    top: 10%;
+    left: 8%;
+    position: absolute;
+    /*text-align: center;*/
+    border: 2px solid ;
+    color:black;
+}
+h4
+{
+    text-align: center;
+}
+button
+{
+    width: 100%;
+}

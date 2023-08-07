@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>moviereg</title>
+  </head>
+<body>
+    <br>  
+    <div class="container mt-4">
+      <div class="card">
+        <h1>REGISTER FORM</h1>
+    <form class="container1" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <br>
+          <label>FirstName</label>
+          <input type="text" [(ngModel)]="firstName" class="form-control" id="FirstName" formControlName="firstName"
+          placeholder="Enter the FirstName"
+          [ngClass]="{'is-invalid':submitted && registerForm.controls.firstName.errors}" autofocus/>
+          
+          <div *ngIf="submitted && registerForm.controls.firstName.errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls.firstName.errors.required">
+                     FirstName is required
+            </div>
+          </div>
+
+        </div>
+        <br>
+    
+        <div class="form-group">
+          <label>LastName</label>
+          <input type="text" [(ngModel)]="lastName"  class="form-control" id="LastName"
+          placeholder="Enter the LastName" formControlName="lastName"
+          [ngClass]="{'is-invalid':submitted && registerForm.controls.lastName.errors}"/>
+        
+          <div *ngIf="submitted && registerForm.controls.lastName.errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls.lastName.errors.required">
+                     LastName is required
+            </div>
+          </div>
+        
+        </div>
+        <br>
+      
+        <div class="form-group">
+          <label>Gmail</label>
+          <input type="text"  [(ngModel)]="email"  class="form-control" id="Gmail"
+          placeholder="Enter the Gmail" formControlName="email"
+          [ngClass]="{'is-invalid':submitted && registerForm.controls.email.errors}"/>
+
+          <div *ngIf="submitted && registerForm.controls.email.errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls.email.errors.required">
+                     EmailId is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.email.errors.email">
+                   Email is not valid
+            </div>
+          </div>
+
+        </div>
+        <br>
+       
+        <div class="form-group">
+          <label>PhoneNumber</label>
+          <input type="text" [(ngModel)]="PhoneNumber"  class="form-control" id="PhoneNumber"
+          placeholder="Enter the PhoneNumber" formControlName="PhoneNumber"
+          [ngClass]="{'is-invalid':submitted && registerForm.controls.PhoneNumber.errors}"/>
+        
+          <div *ngIf="submitted && registerForm.controls.PhoneNumber.errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls.PhoneNumber.errors.required">
+                     PhoneNumber is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.PhoneNumber.errors.minlength">
+              PhoneNumber must be 10 digit only
+            </div>
+            <div *ngIf="submitted && registerForm.controls.PhoneNumber.errors.maxlength">
+                   PhoneNumber must be 10 digit only
+            </div>
+          </div>
+        
+        </div>
+        <br>
+    
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" [(ngModel)]="Password"  class="form-control" id="Password"
+          placeholder="Enter the Password" formControlName="Password"
+          [ngClass]="{'is-invalid':submitted && registerForm.controls.Password.errors}"/>
+        
+          <div *ngIf="submitted && registerForm.controls.Password.errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls.Password.errors.required">
+                     Password is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.Password.errors.minlength">
+                   Password must be minimum 6 length
+            </div>
+            <div *ngIf="submitted && registerForm.controls.Password.errors.maxlength">
+              Password must be maximum 10 length
+            </div>
+          </div>
+        
+        </div>
+        <br>
+        <a routerLink="/terms" class="nav-link">Click here to see the Terms and Condtion</a>
+        <hr class="line"/>
+        <button type="submit" class="btn btn-outline-primary mt-4" (click)="save()">Register</button>
+        <br>
+       <!-- <button type="submit" class="btn btn-outline-warning mt-4" routerLink="/Dashboard1">Back</button>
+        <br>
+        <br>
+        <h6>OR</h6>
+        
+        <a routerLink="" class="nav-link">Already Registered click here to login</a>-->
+      </form>
+      <br>
+      </div>
+      <br>
+    </div>
+    
+    </body>
+    </html>   

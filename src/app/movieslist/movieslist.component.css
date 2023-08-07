@@ -1,0 +1,28 @@
+body
+{
+    background-color: black;
+    height: 1300px;
+}
+.table
+{
+   text-align: center;   
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+}
+th:hover
+{
+    background-color: thistle;
+    color: whitesmoke;
+}
+td:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+.nav-link:hover
+{
+   background-color:rgba(0, 0, 0, 0.452);
+   color: whitesmoke;
+   
+}

@@ -1,0 +1,273 @@
+<body>
+
+    <!--Nav Bar starts-->    
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+          <!--<a class="navbar-brand" routerLink="/Dashboard"><img [src]="logo" class="image"/></a>--> 
+          <a class="navbar-brand" routerLink="Dashboard1"><b>MovieTime</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button class="nav-link active" aria-current="/page" routerLink="/Dashboard1"><b>HOME</b></button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" routerLink="/searchbar" ><b>SEARCH</b></button>
+            </li>
+            <!--DropDown Box starts
+            <select>
+              <option><b>Genre</b></option>
+              <option><b>Action</b></option>
+              <option><b>Superhero</b></option>
+              <option>Adventure</option>
+            </select>
+  
+            <li class="nav-item">-->
+              
+            <li class="nav-item">
+            <div class="dropdown">
+              <!--<button class="dropbtn" class="nav-link"><b>Genre</b></button>-->
+              <button class="nav-link"><b>GENRE</b></button>
+              <div class="dropdown-content">
+                <a routerLink="/action">Action</a>
+                <a routerLink="/adventure">Adventure</a>
+                <a routerLink="/superhero">Superhero</a>
+              </div>
+            </div>
+          </li>
+  
+            <!--DropDown Box ends-->
+            <!--<li class="nav-item">
+              <a class="nav-link" routerLink="/register"><b>SIGNUP</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink=""><b>SIGNIN</b></a>
+            </li>-->
+            <!--<li class="nav-item">
+              <a class="nav-link" routerLink="/viewcustomer"><b>VIEW CUSTOMERS</b></a>
+            </li>-->  
+          </ul>
+        </div>
+        <button class="btn btn-outline-danger btn-sm"  routerLink="">LOGOUT</button>
+      </div>
+    </nav>
+  <!--Nav bar ends-->        
+
+   <!--Action starts-->
+   <br>
+   <hr class="line"/>
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#" style="color: wheat;"><b>GENRE : ADVENTURE</b></a>
+   </div>  
+   <hr class="line"/>
+ 
+   <!--Action ends-->
+ 
+   <!--movies list starts-->
+   <div class="spacebetweenblock">    
+     
+    <div class="figure1">
+
+      <figure class="figure">
+        <br>
+        <div class="center">  
+          <a routerLink="/adam" class="nav-link">
+        <img 
+        [src]="image20"
+        class="figure-img img-fluid rounded shadow-3 mb-3"
+        id="image"
+        alt="..."
+        />
+        <h4 class="title">The Adam Project</h4>
+          </a>
+        </div>
+        </figure>
+        
+        <figure class="figure">
+        <br>
+        <div class="center">
+          <a routerLink="/amster" class="nav-link">  
+        <img 
+        [src]="image21"
+        class="figure-img img-fluid rounded shadow-3 mb-3"
+        id="image"
+        alt="..."
+        />
+        <h4 class="title">Amsterdam</h4>
+          </a>
+        </div>
+        </figure>
+
+     <figure class="figure">
+       <br>
+       <div class="center">  
+         <a routerLink="/thor" class="nav-link">  
+       <img 
+       [src]="image12"
+       class="figure-img img-fluid rounded shadow-3 mb-3"
+       id="image"
+       alt="..."
+       />
+       <h4 class="title">Thor:Love and Thunder</h4>
+       </a>
+       </div>
+       </figure>
+ 
+       <figure class="figure">
+         <br>
+         <div class="center">  
+           <a routerLink="/northman" class="nav-link">  
+         <img 
+         [src]="image13"
+         class="figure-img img-fluid rounded shadow-3 mb-3"
+         id="image"
+         alt="..."
+         />
+         <h4 class="title">The Northman</h4>
+           </a>
+         </div>
+         </figure>
+ 
+         <figure class="figure">
+           <br>
+           <div class="center">  
+             <a routerLink="/forever" class="nav-link">
+           <img 
+           [src]="image16"
+           class="figure-img img-fluid rounded shadow-3 mb-3"
+           id="image"
+           alt="..."
+           />
+           <h4 class="title">Wakanda Forever</h4>
+           </a>
+           </div>
+           </figure>
+ 
+           <figure class="figure">
+             <br>
+             <div class="center">  
+               <a routerLink="/avatar" class="nav-link">
+             <img 
+               [src]="image17"
+               class="figure-img img-fluid rounded shadow-3 mb-3"
+               id="image"
+               alt="..."
+             />
+             <h4 class="title">Avatar: The Way of Water</h4>
+             </a>
+             </div>
+             </figure>
+ 
+             <figure class="figure">
+               <br>
+               <div class="center">
+                 <a routerLink="/lostcity" class="nav-link">
+               <img 
+               [src]="image18"
+               class="figure-img img-fluid rounded shadow-3 mb-3"
+               id="image"
+               alt="..."
+               />
+               <h4 class="title">The Lost City</h4>
+                 </a>
+               </div>
+               </figure>
+               
+               <figure class="figure">
+               <br>
+               <div class="center">  
+                 <a routerLink="/grayman" class="nav-link">
+               <img 
+               [src]="image19"
+               class="figure-img img-fluid rounded shadow-3 mb-3"
+               id="image"
+               alt="..."
+               />
+               <h4 class="title">The Gray Man</h4>
+                 </a>
+               </div>
+               </figure>
+               
+               <figure class="figure">
+               <br>
+               <div class="center">  
+                 <a routerLink="/holmes" class="nav-link">
+               <img 
+               [src]="image24"
+               class="figure-img img-fluid rounded shadow-3 mb-3"
+               id="image"
+               alt="..."
+               />
+               <h4 class="title">Enola Holmes 2</h4>
+               </a>
+               </div>
+               </figure>
+               
+               <figure class="figure">
+                 <br>
+                 <div class="center">  
+                   <a routerLink="/blackadam" class="nav-link">
+                 <img 
+                 [src]="image25"
+                 class="figure-img img-fluid rounded shadow-3 mb-3"
+                 id="image"
+                 alt="..."
+                 />
+                 <h4 class="title">Black Adam</h4>
+                 </a>
+                 </div>
+                 </figure>
+ 
+                 <figure class="figure">
+                   <br>
+                   <div class="center">  
+                     <a routerLink="/doctorstrange" class="nav-link">
+                   <img 
+                   [src]="image26"
+                   class="figure-img img-fluid rounded shadow-3 mb-3"
+                   id="image"
+                   alt="..."
+                   />
+                   <h4 class="title">Doctor Strange: Multiverse</h4>
+                   </a>
+                   </div>
+                   </figure>
+ 
+                   <figure class="figure">
+                     <br>
+                     <div class="center">  
+                       <a routerLink="/flash" class="nav-link">
+                     <img 
+                     [src]="image27"
+                     class="figure-img img-fluid rounded shadow-3 mb-3"
+                     id="image"
+                     alt="..."
+                     />
+                     <h4 class="title">The Flash</h4>
+                     </a>
+                     </div>
+                     </figure>
+ 
+                     <figure class="figure">
+                       <br>
+                       <div class="center">  
+                         <a routerLink="/antman" class="nav-link">
+                       <img 
+                       [src]="image28"
+                       class="figure-img img-fluid rounded shadow-3 mb-3"
+                       id="image"
+                       alt="..."
+                       />
+                       <h4 class="title">Ant-Man 3</h4>
+                       </a>
+                       </div>
+                       </figure>
+ 
+   </div>
+   </div>
+ 
+   <!--movies list ends-->
+
+</body>  

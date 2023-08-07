@@ -1,0 +1,72 @@
+<body>
+
+<!--Nav Bar starts-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <div class="container-fluid">
+    <a class="navbar-brand"><b>MovieTime</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <button class="nav-link active" aria-current="page" routerLink="/viewcustomer"><b>USER DETAILS</b></button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link active" aria-current="page" routerLink="/movielist"><b>MOVIES LIST</b></button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link active" aria-current="page" routerLink="/adminsearch"><b>MOVIES SEARCH</b></button>
+        </li>
+      </ul>  
+    </div>  
+        <button class="btn btn-outline-secondary" routerLink="/adminlogin">LOGOUT</button>
+  </div>
+</nav>
+
+<!--Nav Bar ends-->
+  <br>
+  <br>
+  <div class="container">
+    <h2><b><u>CUSTOMER DETAILS</u></b></h2>    
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">EMAILID</th>
+        <th scope="col">FIRSTNAME</th>
+        <th scope="col">LASTNAME</th>
+        <th scope="col">PHONENUMBER</th>
+        <th scope="col">PASSWORD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <th scope="row">{{customer.emailid}}</th>
+        <td>{{customer.firstName}}</td>
+        <td>{{customer.lastName}}</td>
+        <td>{{customer.phonenum}}</td>
+        <td>{{customer.password}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>

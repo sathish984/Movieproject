@@ -1,0 +1,31 @@
+<body>
+    <br>  
+    <div class="container mt-4">
+      <div class="card">
+        <h1><b>SIGN IN</b></h1>
+    <form >      
+        <div class="form-group">
+          <br>
+          <label>Gmail</label>
+          <input type="text"  class="form-control" id="Gmail"  [(ngModel)]="email" [ngModelOptions]="{standalone:true}"
+          placeholder="Enter the Gmail" autofocus>
+        </div>
+        <br>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password"  class="form-control" id="Password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}"
+          placeholder="Enter the Password">
+        </div>
+        <hr class="line"/>
+        <button type="submit" class="btn btn-outline-primary mt-4" (click)="login()" >Log In</button>
+        <br>
+        <!--<button  class="btn btn-outline-warning mt-4" routerLink="/Dashboard1" >DashBoard</button>-->
+        <br>
+        
+        <h6>OR</h6>
+        <a routerLink="/register" class="nav-link">New User? Click here to register</a>
+        <br>
+      </form>
+      </div>
+    </div>    
+    </body>

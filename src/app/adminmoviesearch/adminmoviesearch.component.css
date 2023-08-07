@@ -1,0 +1,57 @@
+
+body
+{
+   background-color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   height: 800px;
+}
+h2
+
+h2:hover
+{
+   color: dimgrey;
+}
+.nav-link:hover
+{
+   background-color:rgba(7, 6, 6, 0.452);
+   color: whitesmoke;
+}
+input
+{
+    width: 60%;
+    text-align: center;
+    height: 5%;
+    margin-left: 22%;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+input:hover
+{
+    background-color:whitesmoke;
+    color: black;
+}
+td
+{
+    background-color:whitesmoke;
+    color:black;   
+}
+table
+{
+    width: 60%;
+    margin-left: 22%;       
+}
+img
+{
+    height: 5%;
+    width: 5%;
+}
+table
+{
+    text-align: center;
+}
+td :hover
+{
+   color: blue;
+   text-decoration: underline;
+   cursor: pointer;
+   text-decoration: underline;   
+}

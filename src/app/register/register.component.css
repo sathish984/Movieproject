@@ -1,0 +1,82 @@
+body
+{
+    /*background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    /*background-color: black;*/
+    height: 900px;
+    text-align: center;
+    background-image: url("https://t4.ftcdn.net/jpg/00/81/35/31/360_F_81353111_RHDo5ABCfUCnQpiSqJmAI6bzrIiF11rI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container
+{
+    width: 60%;
+}
+input
+{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+input:hover
+{
+    color:black;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.384);
+}
+button
+{
+    text-align: center;
+}
+.form-group
+{
+    width: 100%;
+    text-align: center;
+   
+}
+h1
+{
+    text-align: center;
+    background-color: darkgray;
+}
+.btn
+{
+    width: 40%;
+}
+label
+{
+    font-weight: bold;
+    font-size: larger;
+}
+.line
+{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+a
+{
+    color: blue;
+}
+a:hover
+{
+    color: blue;
+    text-decoration: underline;
+}
+.card
+{
+    background-color: rgba(211, 211, 211, 0.253);
+}
+.form-control
+{
+    background-color: rgba(211, 211, 211, 0.253);
+    color:white;
+    text-align: center;
+    border-color:gray;
+}
+.form-control:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}

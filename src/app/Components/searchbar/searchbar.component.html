@@ -1,0 +1,66 @@
+<!--<input type="text" [(ngModel)]="searchQuery" (input)="filterContent()" placeholder="Search...">
+    <ul>
+      <li *ngFor="let item of filteredItems" (click)="redirectToPage(item)">{{ item.name }}</li>
+    </ul>-->
+    <body>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" routerLink="/Dashboard"><img [src]="logo" class="image"/></a>--> 
+            <a class="navbar-brand" routerLink="/Dashboard1"><b>MovieTime</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="/page" routerLink="/Dashboard1"><b>HOME</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/searchbar"><b>SEARCH</b></a>
+              </li>
+
+              <li class="nav-item">
+                <div class="dropdown">
+                  <!--<button class="dropbtn" class="nav-link"><b>Genre</b></button>-->
+                  <button class="nav-link"><b>GENRE</b></button>
+                  <div class="dropdown-content">
+                    <a routerLink="/action">Action</a>
+                    <a routerLink="/adventure">Adventure</a>
+                    <a routerLink="/superhero">Superhero</a>
+                  </div>
+                </div>
+              </li>
+
+             <!-- <li class="nav-item">
+                <a class="nav-link" routerLink="/register"><b>SIGNUP</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/login"><b>SIGNIN</b></a>
+              </li> -->
+              <!--<li class="nav-item">
+                <a class="nav-link" routerLink="/viewcustomer"><b>VIEW CUSTOMERS</b></a>
+              </li>-->  
+            </ul>
+          </div>
+          <button class="btn btn-outline-danger btn-sm"  routerLink="">LOGOUT</button>
+        </div>
+      </nav>
+    <!--Nav bar ends-->
+    <!--Searchbar starts-->  
+    <br>
+    <input type="text" [(ngModel)]="searchQuery" (input)="filterContent()" placeholder="Enter the movie name to search" autofocus>
+    
+   <table class="table table-striped">
+
+      <thead>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of filteredItems">
+          <td>
+            <a [routerLink]="item.route" (click)="redirectToPage(item)"><b>{{ item.name }}</b></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Searchbar starts-->
+  </body>

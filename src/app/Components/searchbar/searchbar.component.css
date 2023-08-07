@@ -1,0 +1,112 @@
+body
+{
+    background-color: black;
+    color: white;
+    height: 800px;
+    /*text-align: center;*/
+}
+input
+{
+    width: 60%;
+    text-align: center;
+    height: 5%;
+    margin-left: 22%;
+}
+input:hover
+{
+    background-color:whitesmoke;
+}
+
+.container-fluid .navbar-brand
+{
+    color: red;
+}
+.navbar-nav .nav-item .nav-link
+{
+   font-weight: bold;
+   color: red;
+}
+td
+{
+    background-color: gainsboro;
+    color: black;   
+}
+table
+{
+    width: 60%;     
+    margin-left: 22%;  
+}
+img
+{
+    height: 5%;
+    width: 5%;
+}
+.nav-item .nav-link:hover
+{
+   background-color: rgba(255, 0, 0, 0.671);
+   transition: 2s;
+}
+b:hover
+{
+    color: whitesmoke;
+    transition: 1.5s;
+}
+table
+{
+    text-align: center;
+}
+td :hover
+{
+   color: rgba(167, 84, 245, 0.74);
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;  
+}
+  
+  /* Style the dropdown button */
+  .dropbtn {
+    background-color: black;
+    color: red;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.377);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown-content a {
+    color:red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: larger;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #dddddd23;
+    color:rgba(255, 0, 0, 0.699);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  
+  /* Show the dropdown content when the button is hovered over */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
